@@ -1,0 +1,17 @@
+<h2>Edit Menu</h2>
+
+<form action="/foods/<%= @food.id %>" method='POST'>
+  Category: <input type="text" name='food[category]' value="<%= @food.category %>"><br>
+  
+  Name: <input type="text" name='food[name]' value="<%= @food.name %>"><br>
+
+  Price: <input type="integer" name='food[price]' value="<%= @food.price %>"><br>
+
+  <input type="hidden" name="_method" value="PATCH">
+  <input type="submit">
+</form>
+
+<form action="/foods/<%= @food.id %>" method="POST">
+  <input type="hidden" name="_method" value="DELETE">
+  <input type="submit" value="Delete Food">
+</form>

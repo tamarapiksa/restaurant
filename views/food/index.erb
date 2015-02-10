@@ -1,0 +1,17 @@
+<div class="foodbod">
+  <div style="height: 4em;"></div>
+  <div class="menumain">
+    <a href="/intelliserve/show">Main</a>
+  </div>
+  <div class="foodiv">
+    <div class="menubod">
+      <h1 class="menuhead">Menu</h1>
+      <ul> 
+        <% @foods.each do |food| %>
+          <p><strong><%= food.name %></strong></p>
+          <p>£<%= food.price %></p>
+        <% end %> 
+      </ul>
+    </div>
+  </div>
+</div>

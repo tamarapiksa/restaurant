@@ -1,0 +1,26 @@
+<h2>Edit Order</h2>
+<form action="/orders/<%= @order.id %>" method="POST">
+  Category: <input type="text" name="order[category" value="<%= @order.category %>"><br>
+  Name: <input type="text" name="order[name]" value="<%= @order.name %>"><br>
+  Price: <input type="int" name="order[price]" value="<%= @order.price %>"><br>
+  Quantity: <input type="int" name="order[quantity]" value="<%= @order.quantity %>"><br>
+  Table Number: <select name="order[party_id]">
+    <% @parties.each do |party| %>
+      <if @order.party_id == party.id %>
+      <option value="<%= party.id%>" selected="selected"><%= party.table_number %></option>
+        <% else %>
+        <option value="<%= party.id %>"><%= party.table_number %></option>
+        <% end %>
+      <% end %>
+    </select><br> 
+
+    <input type="hidden" name="_method" value="PATCH">
+    <input type="submit">
+  </form>
+
+  <form aciton="/orders/<%= @order.id %>" method="POST">
+    <input type="hidden" name="_method" value="DELETE">
+    <input type="submit" value="Delete Order">
+  </form> 
+
+  

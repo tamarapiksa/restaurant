@@ -1,0 +1,157 @@
+body {
+  margin: 0;
+}
+
+form {
+ width: 50%;
+}
+
+form label {
+ display: block;
+}
+
+form input[type='text'] {
+ width: 100%;
+}
+
+form input + label {
+ margin-top: 1em;
+} 
+
+ul {
+  list-style-type: none;
+}
+
+li a {
+  color: white;
+}
+
+.home {
+  background-image: url("http://cilver.com/wp-content/uploads/2014/04/Place-for-dishes-black-cabinet-rock-n-roll-restaurant-interior-black-design-black-cabinet-for-white-dishes.jpg");
+  background-size: cover;
+}
+
+.intel {
+  color: white;
+  font-family: 'Helvetica';
+  font-size: 70px;
+  margin-top: 38px;
+  margin-left: 40px;
+  padding: 10px;
+
+  }
+
+  .intelist {
+    padding: 0px;
+    margin-top: 35px;
+    margin-left: 54px;
+    font-family: 'Helvetica';
+    font-size: 38px;
+    text-decoration: none;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .table {
+    font-family: Arial;
+    font-size: 80px;
+    margin: auto;
+  }
+
+.menubod {
+    /*background-image: url("http://cilver.com/wp-content/uploads/2014/04/Place-for-dishes-black-cabinet-rock-n-roll-restaurant-interior-black-design-black-cabinet-for-white-dishes.jpg");*/
+    /*color: white;*/
+    font-size: 30px;
+    font-family: Helvetica;
+    margin: auto;
+}
+
+.menuhead {
+  margin-left: 200px;
+
+  }
+
+.foodiv {
+  background-color: white;
+  margin: 0 auto;
+  width: 50%;
+  /*margin: 20px 510px 60px 500px;*/
+  color: black;
+  opacity: 0.7;
+  padding: 20px;
+}
+
+.partybod {
+   background-image: url("http://cilver.com/wp-content/uploads/2014/04/Place-for-dishes-black-cabinet-rock-n-roll-restaurant-interior-black-design-black-cabinet-for-white-dishes.jpg");
+    color: white;
+    font-size: 25px;
+    font-family: Helvetica;
+    margin-left: auto;
+}
+
+.partydiv {
+   background-color: white;
+  margin: 90px 510px 60px 515px;
+  color: black;
+  opacity: 0.7;
+  padding: 20px;
+}
+
+.orderbod {
+   background-image: url("http://cilver.com/wp-content/uploads/2014/04/Place-for-dishes-black-cabinet-rock-n-roll-restaurant-interior-black-design-black-cabinet-for-white-dishes.jpg");
+    color: white;
+    font-size: 25px;
+    font-family: Helvetica;
+    margin-left: auto;
+}
+
+.orderdiv {
+  background-color: white;
+  margin: 90px 510px 60px 515px;
+  color: black;
+  opacity: 0.7;
+  padding: 20px;
+}
+
+.foodhead {
+   background-color: white;
+  margin: 90px 510px 60px 515px;
+  color: black;
+  opacity: 0.7;
+  padding: 20px;
+}
+
+
+.foodshow {
+
+}
+
+.foodbod {
+    overflow: auto;
+    background-image: url("http://cilver.com/wp-content/uploads/2014/04/Place-for-dishes-black-cabinet-rock-n-roll-restaurant-interior-black-design-black-cabinet-for-white-dishes.jpg");
+    color: white;
+    font-size: 25px;
+    font-family: Helvetica;
+    margin-left: auto;
+}
+
+.menumain {
+    float: left;
+    padding-top: 20px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    margin-left: 54px;
+    font-family: 'Helvetica';
+    font-size: 60px;
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+
+

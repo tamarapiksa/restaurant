@@ -1,0 +1,8 @@
+<h2>Orders</h2>
+
+<a href="/orders/new">Add an Order</a><br>
+<ul>
+    <% @orders.each do |order| %>
+    <li><a href="orders/<%= order.id %>"><%= order.id %></a></li>
+    <% end %>
+</ul> 

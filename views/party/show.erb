@@ -1,0 +1,25 @@
+<h2><%= @party.table_number %></h2>
+<h3>Tables</h3>
+<ul>
+  <li>Table Number: <%= @party.table_number %> </li>
+  <li>Guests: <%= @party.guests %> </li>
+  <li>Paid: <%= @party.paid %> </li>
+
+
+<ul>
+  <li>
+<a href="/parties/<%= @party.id %>/edit">Edit Table</a>
+
+
+
+<h2>Add a new order!<h2>
+
+  <form action="/parties/<%= @party.id %>" method="POST">
+    <select name = "food_id">
+    <% @foods.each do |food| %>
+    <option value= "<%= food.id %>"><%=food.name %></option>
+    <% end %>
+  </select>
+
+  <input type="submit">
+</form> 
