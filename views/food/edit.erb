@@ -1,4 +1,16 @@
-<h2>Edit Menu</h2>
+
+
+  <div class="foodbod">
+  <div style="height: 4em;"></div>
+  <div class="menumain">
+      <a class="mainlink" href="/dished">Main</a><br>
+      <a class="mainlink" href="/foods">Menu</a>
+  </div>
+
+  <div class="orderdiv">
+    <body class="orderbod">
+     <div class="menubod">
+    <h2 class="tablehead">Edit Menu</h2><br><br><br><br><br>
 
 <form action="/foods/<%= @food.id %>" method='POST'>
   Category: <input type="text" name='food[category]' value="<%= @food.category %>"><br>
@@ -15,3 +27,7 @@
   <input type="hidden" name="_method" value="DELETE">
   <input type="submit" value="Delete Food">
 </form>
+
+</div> 
+  </body>
+</div> 

@@ -1,24 +1,37 @@
-<html>
+
   <head>
       <link rel="stylesheet" type="text/css" href="/stylesheets/styles.css"> 
   <head>
+   <div class="foodbod">
+  <div style="height: 4em;"></div>
+  <div class="menumain">
+      <a class="mainlink" href="/dished">Main</a><br>
+      <a class="mainlink" href="/orders">All Orders</a>
+  </div>
+
+
+   
   <div class="orderdiv">
-  <body class="orderbod">
-<h2>Add Order</h2>
+    <body class="orderbod">
+     <div class="menubod">
+    <h2 class="tablehead">Add Order</h2><br><br><br><br><br>
 <form action="/orders" method="POST">
-  Category: <input type="text" name="order[category]"><br>
-  Name: <input type="text" name="order[name]"><br> 
+  <select name="order[food_id]">
+    <% Food.all.each do |food| %>
+      <option value="<%= food.id %>"><%= food.name %></option>
+    <% end %>
+  </select>
+  <select name="order[party_id]">
+    <% Party.all.each do |party| %>
+      <option value="<%= party.id %>"><%= party.table_number %></option>
+    <% end %>
+  </select>
   
    <input type="submit">
-
-
  </form>
+</div>
 </body>
 </div> 
-</html> 
-
-
-
 
 
 

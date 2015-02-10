@@ -1,16 +1,16 @@
- <html>
-    <head>
-      <link rel="stylesheet" type="text/css" href="/stylesheets/styles.css"> 
-        <title>Menu</title>
-            </head> 
-              <div class="foodhead">
-                <body class="foodbod">
-                  <h1 class="foodshow"><%= @food.name %></h1> 
-                      <p>£<%= @food.price %></p>
-                      <p><%= @food.category %></p>
-                      <a href="/foods/<%= @food.id %>/edit">Edit or Delete Item</a></br>
-                      <a href="/foods">Back to Menu</a>
-                </body>
-              </div>
-          </html>
+  <div class="foodbod">
+  <div style="height: 4em;"></div>
+  <div class="menumain">
+      <a class="mainlink" href="/dished">Main</a><br>
+  </div>
 
+
+<div class="foodhead">
+  <body class="foodbod">
+    <h1 class="foodshow"><%= @food.name %></h1> 
+        <p>£<%= @food.price %></p>
+        <p><%= @food.category %></p>
+        <a href="/foods/<%= @food.id %>/edit">Edit or Delete Item</a></br>
+        <a href="/foods">Back to Menu</a>
+  </body>
+</div>

@@ -1,25 +1,24 @@
 
-
-
-<html>
 <head>
-        <link rel="stylesheet" type="text/css" href="/stylesheets/styles.css"> 
-
+      <link rel="stylesheet" type="text/css" href="/stylesheets/styles.css"> 
   </head>
-
-<body>
-<h2>Tables</h2>
-<ul>
+<div class="foodbod">
+  <div style="height: 4em;"></div>
+  <div class="menumain">
+      <a class="mainlink" href="/dished">Main</a><br>
+      <a class="mainlink" href="/parties/new">Add Table</a>
+  </div>
+  <div class="foodiv">
+    <div class="menubod">
+      <h1 class="menuhead">Tables</h1>
+      <ul>
     <% @parties.each do |party| %>
     <li>
-        <a href="/parties/<%= party.id %>">
+        <a  class="tablelink" href="/parties/<%= party.id %>">
         <%= party.table_number %></a>
     </li>
     <% end %>
-
-
 </ul>
-
-<a href="/parties/new">Add New Table</a><br>
-</body>
-</html>
+    </div>
+  </div>
+</div>

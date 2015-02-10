@@ -1,3 +1,15 @@
+  <div class="foodbod">
+  <div style="height: 4em;"></div>
+  <div class="menumain">
+      <a class="mainlink" href="/dished">Main</a><br>
+      <a class="mainlink" href="/foods">Menu</a>
+  </div>
 
-<h2><%= @party.foods %></h2>
+<div class="foodhead">
+  <body class="foodbod">
 <h3>Orders</h3>
+<%= @order.food.name %><br><br>
+<a href="/parties/<%= @order.party_id %>">View Party</a>
+
+  </body>
+</div>

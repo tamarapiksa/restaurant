@@ -31,7 +31,7 @@ end
 get '/parties/:id' do
   @party = Party.find(params[:id])
   @foods = Food.all
-  Pry.start(binding)
+
   erb :'party/show'
 end 
 
@@ -97,6 +97,7 @@ end
 
 get '/orders/:id' do
   @order = Order.find(params[:id])
+  @party = @order.party
 
   erb :'order/show'
 end
@@ -133,14 +134,6 @@ get '/foods/new' do
   erb :'food/new'
 end
 
-get '/foods/:id' do
-  foods_id = params[:id]
-  @food = Food.find(food_id)
-
-  erb = :'food/show'
-
-end 
-
 post '/foods' do
     @name = params["food"]["name"]
     @category = params["food"]["category"]
@@ -154,11 +147,25 @@ post '/foods' do
     end
 end
   
+get '/foods/edit' do
+   @foods = Food.all
+    
+    erb :'/food/edit'
+ end
+
+get '/foods/:id' do
+  @food = Food.find(params[:id])
+
+  erb :'food/show'
+
+end 
+
+
 get '/foods/:id/edit' do 
   @food = Food.find(params[:id])
 
 
-    erb :'/food/show'
+    erb :'/food/edit'
 end 
 
 patch '/foods/:id' do
@@ -175,15 +182,6 @@ delete '/foods/:id' do
   redirect to "/foods"
 
 end 
-
-
-
-
-
-
-
-
-
 
 get '/download/:filename' do |filename|
   send_file "./files/#{filename}", :filename => filename, :type => 'Application/octet-stream'

@@ -1,17 +1,21 @@
 <div class="foodbod">
   <div style="height: 4em;"></div>
   <div class="menumain">
-    <a href="/intelliserve/show">Main</a>
+      <a class="mainlink" href="/dished">Main</a><br>
+      <a class="mainlink" href="/foods/edit">Edit Menu</a>
   </div>
   <div class="foodiv">
     <div class="menubod">
       <h1 class="menuhead">Menu</h1>
       <ul> 
-        <% @foods.each do |food| %>
+        <li><% @foods.each do |food| %></li>
           <p><strong><%= food.name %></strong></p>
-          <p>£<%= food.price %></p>
+          <li>£<%= food.price %></li><br>
+          <a class="editfoodlink" href="/foods/<%= food.id %>/edit">Edit/Delete</a>
         <% end %> 
       </ul>
     </div>
   </div>
 </div>
+
+

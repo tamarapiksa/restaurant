@@ -20,10 +20,16 @@ form input + label {
 
 ul {
   list-style-type: none;
+  color: black;
 }
 
 li a {
   color: white;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
 
 .home {
@@ -50,13 +56,14 @@ li a {
     text-decoration: none;
   }
 
-  a {
+  .mainlink {
     color: white;
     text-decoration: none;
+
   }
 
   .table {
-    font-family: Arial;
+    font-family: Helvetica;
     font-size: 80px;
     margin: auto;
   }
@@ -77,7 +84,7 @@ li a {
 .foodiv {
   background-color: white;
   margin: 0 auto;
-  width: 50%;
+  width: 29%;
   /*margin: 20px 510px 60px 500px;*/
   color: black;
   opacity: 0.7;
@@ -110,18 +117,18 @@ li a {
 
 .orderdiv {
   background-color: white;
-  margin: 90px 510px 60px 515px;
+  margin: 0px 510px 60px 515px;
   color: black;
   opacity: 0.7;
-  padding: 20px;
+  padding: 10px 20px 20px 20px;
 }
 
 .foodhead {
    background-color: white;
-  margin: 90px 510px 60px 515px;
+  margin: 0px 510px 60px 515px;
   color: black;
   opacity: 0.7;
-  padding: 20px;
+  padding: 5px 0px 0px 100px;
 }
 
 
@@ -130,6 +137,7 @@ li a {
 }
 
 .foodbod {
+    height: 100%;
     overflow: auto;
     background-image: url("http://cilver.com/wp-content/uploads/2014/04/Place-for-dishes-black-cabinet-rock-n-roll-restaurant-interior-black-design-black-cabinet-for-white-dishes.jpg");
     color: white;
@@ -140,18 +148,41 @@ li a {
 
 .menumain {
     float: left;
-    padding-top: 20px;
-    margin-top: 25px;
+    padding-top: 0px;
+    margin-top: 0px;
     margin-bottom: 10px;
     margin-left: 54px;
     font-family: 'Helvetica';
-    font-size: 60px;
+    font-size: 40px;
     text-decoration: none;
     color: white;
 }
 
+.menu {
+  font-size: 60px;
+}
 
+.tablehead {
+  margin: 35px 0px 20px 150px;
+  font-size: 45px;
+}
 
+.tablelink {
+  color: black;
+}
 
+.neworder {
+  width: 30%;
+  background-color: white;
+  margin: 90px 200px 60px 490px;
+  color: white;
+  opacity: 0.7;
+  padding: 10px;
+  color: black;
+}
+
+.editfoodlink {
+  font-size: 20px;
+}
 
 

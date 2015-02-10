@@ -1,10 +1,24 @@
-<h2>Add a New Table</h2>
 
 
-<form action="/parties" method='POST'>
-  Table Number: <input id="table_number" type="text" name='party[table_number]' ><br>
-  Guests: <input id="guests" type="int" name='party[guests]' ><br>
+  <div class="foodbod">
+  <div style="height: 4em;"></div>
+  <div class="menumain">
+      <a class="mainlink" href="/dished">Main</a><br>
+      <a class="mainlink" href="/foods/edit">Edit Menu</a>
+  </div>
+  <div class="orderdiv">
+    <body class="orderbod">
+     <div class="menubod">
+    <h2 class="tablehead">Add Table</h2><br><br><br><br><br>
+  <form action="/parties" method='POST'>
+  Table Number: <input id="table_number" type="text" name='party[table_number]' ><br><br>
+  Guests: <input id="guests" type="int" name='party[guests]' ><br><br>
   Paid: <input id="paid" type="text" name='party[paid]' ><br>
+    <br>
+    <input type="submit">
+  </form>
+</div> 
+  </body>
+</div> 
 
-  <input type="submit">
-</form>
+
